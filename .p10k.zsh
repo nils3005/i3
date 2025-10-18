@@ -217,17 +217,17 @@
 
   ##################################[ dir: current directory ]##################################
   # Default current directory color.
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND='#913119'  #31
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND='#ba3413'  #'#913119'  #31
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
   # Replace removed segment suffixes with this symbol.
   typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
   # Color of the shortened directory segments.
-  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND='#c45a3f'
+  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND='#ba3413'  #'#c45a3f'
   # Color of the anchor directory segments. Anchor segments are never shortened. The first
   # segment is always an anchor.
-  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND='#8c270e'  #'#913119'
+  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND='#e03b12'  #'#8c270e'  #'#913119'
   # Display anchor directory segments in bold.
   typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
   # Don't shorten directories that contain any of these files. They are anchors.
@@ -379,7 +379,7 @@
     if (( $1 )); then
       # Styling for up-to-date Git status.
       local       meta='%244F'  # grey foreground
-      local      clean='%76F'   # green foreground
+      local      clean='%244F' #'%76F'   # green foreground
       local   modified='%178F'  # yellow foreground
       local  untracked='%39F'   # blue foreground
       local conflicted='%196F'  # red foreground
